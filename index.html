@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Steady Steps Career Support for New Grads</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="home">
+    <div class="site-shell">
+      <nav class="topbar">
+        <div class="brand">
+          <div class="brand-mark">SS</div>
+          <div class="brand-copy">
+            <strong>Steady Steps Career Support for New Grads</strong>
+            <span>Calm support for planning, reflection, and peer connection</span>
+          </div>
+        </div>
+
+        <div class="nav-links">
+          <a class="active" href="index.html">Home</a>
+          <a href="career-plan.html">My Career Plan</a>
+          <a href="weekly-check-in.html">Weekly Check-In</a>
+          <a href="friday-review.html">Friday Review</a>
+          <a href="dream-board.html">Dream Board</a>
+          <a href="new-grad-guide.html">New Grad Guide</a>
+          <a href="layoff-guide.html">Layoff Guide</a>
+          <a href="community.html">Community</a>
+          <a href="profile.html">Profile</a>
+          <a href="auth.html">Account</a>
+        </div>
+      </nav>
+
+      <section class="hero">
+        <div class="hero-card">
+          <p class="eyebrow">Steady Steps</p>
+          <h1>Feeling stuck after graduation? Get your next 3 steps in 2 minutes.</h1>
+          <p class="hero-copy">
+            Steady Steps is a calm front-end prototype for new grads who want structure, resume support,
+            community, and practical encouragement without pressure.
+          </p>
+          <div class="hero-actions">
+            <a class="button" href="career-plan.html">Find my next step</a>
+            <a class="button-secondary" href="community.html">Explore community</a>
+          </div>
+        </div>
+
+        <aside class="preview-card">
+          <div class="preview-block">
+            <span class="mini-label">Career planning</span>
+            <strong>Make a plan you can actually follow</strong>
+            <p class="helper">Reflect on your goals, your energy, and what feels hardest right now.</p>
+          </div>
+          <div class="preview-block">
+            <span class="mini-label">Weekly reflection</span>
+            <strong>Track progress without spiraling</strong>
+            <p class="helper">Use the check-in and Friday Review pages to notice real movement, even when it feels small.</p>
+          </div>
+          <div class="preview-block">
+            <span class="mini-label">New grad support</span>
+            <strong>Start where you are</strong>
+            <p class="helper">Use the New Grad Survival Guide for practical help with uncertainty, routines, and early-career pressure.</p>
+          </div>
+          <div class="preview-block">
+            <span class="mini-label">Dream board</span>
+            <strong>Write toward the life you want</strong>
+            <p class="helper">Use a blog-style page to reflect on your hopes, your future, and what you want this next chapter to feel like.</p>
+          </div>
+          <div class="preview-block">
+            <span class="mini-label">Community support</span>
+            <strong>Build a small support circle</strong>
+            <p class="helper">Add friends or career support buddies in the prototype community space.</p>
+          </div>
+        </aside>
+      </section>
+
+      <section class="home-support-grid">
+        <aside class="preview-card">
+          <div class="preview-block">
+            <span class="mini-label">Private support</span>
+            <strong>Luma is here to help</strong>
+            <p class="helper">Ask for encouragement, clarity, or a gentle reset. If you fill out your profile, Luma can respond in a more tailored way.</p>
+          </div>
+          <div class="preview-block">
+            <span class="mini-label">What to ask</span>
+            <strong>Simple, grounded support</strong>
+            <p class="helper">Try prompts like “help me get unstuck,” “what should I focus on this week,” or “give me feedback based on my profile.”</p>
+          </div>
+        </aside>
+
+        <section class="preview-card luma-card">
+          <div class="luma-header">
+            <div class="luma-badge">L</div>
+            <div>
+              <p class="eyebrow">Luma</p>
+              <h3>Private support and encouragement</h3>
+            </div>
+          </div>
+
+          <div class="chat-shell">
+            <div class="chat-window" id="lumaChatWindow">
+              <div class="chat-bubble bot">
+                Hi, I’m Luma. I’m here for calm, private support. If you’ve already filled out your profile, I can use that to make my feedback feel more tailored.
+              </div>
+            </div>
+
+            <form class="chat-form" id="lumaForm">
+              <label class="field">
+                <span>Message Luma</span>
+                <textarea
+                  name="lumaMessage"
+                  rows="4"
+                  placeholder="For example: I’m feeling behind. Can you help me figure out what to focus on this week?"
+                  required
+                ></textarea>
+              </label>
+              <button class="button" type="submit">Ask Luma</button>
+            </form>
+
+            <div class="chat-note">
+              Luma is a front-end prototype for encouragement and reflection. Responses stay on this device and are not a substitute for counseling, crisis support, or guaranteed job outcomes.
+            </div>
+            <p class="save-status" id="lumaFormSaveStatus">Your draft saves on this device while you browse.</p>
+          </div>
+        </section>
+      </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="supabase-config.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
