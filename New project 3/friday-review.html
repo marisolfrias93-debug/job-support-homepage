@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Friday Review | Steady Steps</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="friday-review">
+    <div class="site-shell">
+      <nav class="topbar">
+        <div class="brand">
+          <div class="brand-mark">SS</div>
+          <div class="brand-copy">
+            <strong>Steady Steps Career Support for New Grads</strong>
+            <span>Calm support for planning, reflection, and peer connection</span>
+          </div>
+        </div>
+
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="career-plan.html">My Career Plan</a>
+          <a href="weekly-check-in.html">Weekly Check-In</a>
+          <a class="active" href="friday-review.html">Friday Review</a>
+          <a href="dream-board.html">Dream Board</a>
+          <a href="new-grad-guide.html">New Grad Guide</a>
+          <a href="layoff-guide.html">Layoff Guide</a>
+          <a href="community.html">Community</a>
+          <a href="profile.html">Profile</a>
+          <a href="auth.html">Account</a>
+        </div>
+      </nav>
+
+      <main class="single-column">
+        <section class="panel">
+          <div class="section-heading">
+            <p class="eyebrow">Your Week in Review</p>
+            <h2>See your progress without turning it into pressure.</h2>
+            <p class="section-copy">This quick Friday Review highlights what moved forward this week and suggests a few grounded next steps for the next one.</p>
+            <p class="save-status" id="fridayReviewFormSaveStatus">Your entries save on this device as you type.</p>
+          </div>
+
+          <form id="fridayReviewForm">
+            <div class="metrics-grid">
+              <label class="metric-card">
+                <span>Applications this week</span>
+                <input type="number" name="applications" min="0" placeholder="0" required />
+              </label>
+
+              <label class="metric-card">
+                <span>Interviews this week</span>
+                <input type="number" name="interviews" min="0" placeholder="0" required />
+              </label>
+
+              <label class="metric-card">
+                <span>Steps completed this week</span>
+                <input type="number" name="stepsCompleted" min="0" max="3" placeholder="0" required />
+              </label>
+            </div>
+
+            <button class="button" type="submit">Generate my weekly review</button>
+          </form>
+
+          <article class="response-card hidden" id="fridayReviewResponse"></article>
+        </section>
+      </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="supabase-config.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
